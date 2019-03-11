@@ -1,0 +1,58 @@
+[
+  {
+    "Name": "my_first_job_1",
+    "ActionOnFailure": "CONTINUE",
+    "HadoopJarStep": {
+      "Jar": "command-runner.jar",
+      "Args": [
+        "spark-submit",
+        "--deploy-mode",
+        "cluster",
+        "--name",
+        "my_first_job_1",
+        "--executor-cores",
+        "${executor_cores}",
+        "--executor-memory",
+        "${executor_memory}g",
+        "--driver-memory",
+        "${driver_memory}g",
+        "--conf",
+        "spark.yarn.appMasterEnv.PYSPARK_PYTHON=python3",
+        "--conf",
+        "spark.executorEnv.PYSPARK_PYTHON=python3",
+        "s3://my-s3-bucket/pipeline/code/driver.py",
+        "com.blah.module",
+        "--arg1=test",
+        "--arg1=test"
+      ]
+    }
+  },
+  {
+    "Name": "my_first_job_2",
+    "ActionOnFailure": "CONTINUE",
+    "HadoopJarStep": {
+      "Jar": "command-runner.jar",
+      "Args": [
+        "spark-submit",
+        "--deploy-mode",
+        "cluster",
+        "--name",
+        "my_first_job_2",
+        "--executor-cores",
+        "${executor_cores}",
+        "--executor-memory",
+        "${executor_memory}g",
+        "--driver-memory",
+        "${driver_memory}g",
+        "--conf",
+        "spark.yarn.appMasterEnv.PYSPARK_PYTHON=python3",
+        "--conf",
+        "spark.executorEnv.PYSPARK_PYTHON=python3",
+        "s3://my-s3-bucket/pipeline/code/driver.py",
+        "com.blah.module",
+        "--arg1=test",
+        "--arg1=test"
+      ]
+    }
+  }
+]

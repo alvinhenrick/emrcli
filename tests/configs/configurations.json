@@ -1,0 +1,24 @@
+[
+  {
+    "Classification": "spark-defaults",
+    "Properties": {
+      "spark.ssl.ui.enabled": "false",
+      "spark.authenticate.secret": "foo"
+    },
+    "Configurations": []
+  },
+  {
+    "Classification": "yarn-site",
+    "Properties": {
+      "yarn.resourcemanager.am.max-attempts": "1"
+    },
+    "Configurations": []
+  },
+  {
+    "Classification": "core-site",
+    "Properties": {
+      "fs.s3.canned.acl": "BucketOwnerFullControl"
+    },
+    "Configurations": []
+  }
+]

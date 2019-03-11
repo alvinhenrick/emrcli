@@ -1,0 +1,44 @@
+[
+  {
+    "Classification": "spark-defaults",
+    "Properties": {
+      "spark.ssl.ui.enabled": "false",
+      "spark.authenticate.secret": "some"
+    },
+    "Configurations": []
+  },
+  {
+    "Classification": "yarn-site",
+    "Properties": {
+      "yarn.resourcemanager.am.max-attempts": "1"
+    },
+    "Configurations": []
+  },
+  {
+    "Classification": "core-site",
+    "Properties": {
+      "fs.s3.canned.acl": "BucketOwnerFullControl"
+    },
+    "Configurations": []
+  },
+  {
+    "Classification": "spark-env",
+    "Configurations": [
+      {
+        "Classification": "export",
+        "Properties": {
+          "PYSPARK_PYTHON": "/usr/bin/python3",
+          "PYSPARK_DRIVER_PYTHON": "/usr/bin/python3"
+        },
+        "Configurations": []
+      }
+    ]
+  },
+  {
+    "Classification": "zeppelin-env",
+    "Properties": {
+      "zeppelin.pyspark.python": "/usr/bin/python3"
+    },
+    "Configurations": []
+  }
+]

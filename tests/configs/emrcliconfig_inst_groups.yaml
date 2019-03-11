@@ -1,0 +1,26 @@
+---
+ENV: prod
+aws_profile: prod
+job_name: test_cluster
+user: ahenrick
+key_pair: alvin
+
+instance_type: m4.4xlarge
+instance_count: 2
+instance_volume_size: 100
+
+cores_per_executor: 3
+auto_terminate: True
+
+configuration: tests/configs/configurations.json
+bootstrapaction: tests/configs/bootstrap-actions.json
+steps: tests/configs/steps.json
+
+pem_file_path: tests/configs/fakekey.tmp
+script_to_run: test.sh
+
+tags:
+  - Key: "User"
+    Value: "Test"
+  - Key: "Description"
+    Value: "Unit Test"

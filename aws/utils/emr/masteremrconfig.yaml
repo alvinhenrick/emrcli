@@ -1,0 +1,62 @@
+---
+AwsProfile: {{aws_profile | default('default',true)}}
+JobName: {{job_name | default('default_name',true)}}
+LogUri: s3n://{{emr_log_bucket}}/users/{{user}}/aws-logs/
+CustomAmiId: {{ami_id}}
+ReleaseLabel: {{release_label}}
+ServiceRole: {{service_role | default('EMR_DefaultRole',true)}}
+SecurityConfiguration: {{security_configuration}}
+
+Ec2attributes:
+  KeyName: {{key_pair}}
+  InstanceProfile: {{instance_profile | default('EMR_EC2_DefaultRole',true)}}
+  SubnetId: {{subnetid}}
+  ServiceAccessSecurityGroup: {{service_access_security_group}}
+  EmrManagedSlaveSecurityGroup: {{emr_managed_slave_security_group}}
+  EmrManagedMasterSecurityGroup: {{emr_managed_master_security_group}}
+  AdditionalSlaveSecurityGroups: {{emr_additional_slave_security_group}}
+  AdditionalMasterSecurityGroups: {{emr_additional_master_security_group}}
+
+
+Applications:
+  - Name: Hadoop
+  - Name: Ganglia
+  - Name: Spark
+  - Name: Zeppelin
+  - Name: JupyterHub
+
+Instance:
+  Type: {{instance_type}}
+  Count: {{instance_count | default(0)}}
+  VolumeSize: {{instance_volume_size | default(100)}}
+  SpotBidPrice: {{spot_bid_price | default(0.40)}}
+  TimeoutDurationMinutes: {{timeout_duration_in_minutes | default(5)}}
+  BlockDurationMinutes: {{block_duration_in_minutes | default(120)}}
+  MasterOnDemand: {{ request_master_on_demand | default(True) }}
+  CoreOnDemand: {{ request_core_on_demand | default(False) }}
+  EnableFleet: {{ enable_fleet | default(False) }}
+
+Configuration:
+  File: {{configuration}}
+
+BootStrapAction:
+  File: {{bootstrapaction}}
+
+Steps:
+  File: {{steps}}
+
+ScriptToRun:
+  File: {{script_to_run}}
+
+CoresPerExecutor: {{cores_per_executor | default(3)}}
+
+Cluster:
+  AutoTerminate: {{ auto_terminate | default(True) }}
+
+PemFilePath: {{pem_file_path}}
+
+StartDate: {{start_date}}
+
+Tags: {{tags}}
+
+CustomVars: {{custom_vars}}

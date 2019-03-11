@@ -1,0 +1,11 @@
+[
+  {
+    "Name": "pip36-install-dependencies",
+    "ScriptBootstrapAction": {
+      "Path": "s3://clarify-dev-datasciences/pipeline/install_pip36_dependencies.sh",
+      "Args": [
+        "boto3"
+      ]
+    }
+  }
+]

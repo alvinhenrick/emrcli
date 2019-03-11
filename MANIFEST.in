@@ -1,0 +1,8 @@
+include README.md
+include requirements.txt
+include requirements-dev.txt
+include VERSION
+include aws/utils/emr/masteremrconfig.yaml
+include aws/utils/emr/bootstrap-actions.json
+include aws/utils/emr/configurations.json
+include aws/utils/emr/steps.json
