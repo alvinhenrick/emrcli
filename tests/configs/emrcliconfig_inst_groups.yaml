@@ -16,7 +16,7 @@ configuration: tests/configs/configurations.json
 bootstrapaction: tests/configs/bootstrap-actions.json
 steps: tests/configs/steps.json
 
-pem_file_path: tests/configs/fakekey.tmp
+pem_file_path: tests/configs/fakepem.tmp
 script_to_run: test.sh
 
 tags:
