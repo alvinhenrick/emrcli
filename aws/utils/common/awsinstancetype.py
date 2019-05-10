@@ -14,12 +14,12 @@ types = {
     "m4.10xlarge": {"CPU": 40, "RAM": 160, },
     "m4.16xlarge": {"CPU": 64, "RAM": 256, },
 
-    "m5.large": {"CPU": 2, "RAM": 8, "SpotBidPrice": 0.05},
-    "m5.xlarge": {"CPU": 4, "RAM": 16, "SpotBidPrice": 0.11},
-    "m5.2xlarge": {"CPU": 8, "RAM": 32, "SpotBidPrice": 0.25},
-    "m5.4xlarge": {"CPU": 16, "RAM": 64, "SpotBidPrice": 0.45},
-    "m5.12xlarge": {"CPU": 48, "RAM": 192, "SpotBidPrice": 1.4},
-    "m5.24xlarge": {"CPU": 96, "RAM": 384, "SpotBidPrice": 3.0},
+    "m5.large": {"CPU": 2, "RAM": 8},
+    "m5.xlarge": {"CPU": 4, "RAM": 16},
+    "m5.2xlarge": {"CPU": 8, "RAM": 32},
+    "m5.4xlarge": {"CPU": 16, "RAM": 64},
+    "m5.12xlarge": {"CPU": 48, "RAM": 192},
+    "m5.24xlarge": {"CPU": 96, "RAM": 384},
 
     "c4.large": {"CPU": 2, "RAM": 3},
     "c4.xlarge": {"CPU": 4, "RAM": 7},

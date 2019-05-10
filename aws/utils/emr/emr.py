@@ -9,13 +9,13 @@ from string import Template
 
 import boto3
 import yaml
+from aws.utils.common.instancetype import types
 from dateutil import parser
 from file_read_backwards import FileReadBackwards
 from gevent import joinall
 from jinja2 import Environment, FileSystemLoader
 from pssh.clients.native import ParallelSSHClient
 
-from aws.utils.common.instancetype import types
 from aws.utils.ec2.ec2 import Ec2Client
 
 
@@ -584,8 +584,8 @@ class HandleEMRCommands(object):
         if not self.config["Instance"]["MasterOnDemand"]:
             master_group.update({
                 'Market': 'SPOT',
-                'BidPrice': str(self.config["Instance"]["SpotBidPrice"] if self.config["Instance"]["SpotBidPrice"] > 0
-                                else types.get(self.config["Instance"]["Type"]).get("SpotBidPrice", 0.4))
+                'BidPrice': str(
+                    self.config["Instance"]["SpotBidPrice"] if self.config["Instance"]["SpotBidPrice"] > 0 else 0.4)
             })
 
         instance_groups.append(master_group)
@@ -616,8 +616,7 @@ class HandleEMRCommands(object):
                 core_group.update({
                     'Market': 'SPOT',
                     'BidPrice': str(
-                        self.config["Instance"]["SpotBidPrice"] if self.config["Instance"]["SpotBidPrice"] > 0
-                        else types.get(self.config["Instance"]["Type"]).get("SpotBidPrice", 0.4))
+                        self.config["Instance"]["SpotBidPrice"] if self.config["Instance"]["SpotBidPrice"] > 0 else 0.4)
                 })
 
             instance_groups.append(core_group)
