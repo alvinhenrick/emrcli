@@ -1,8 +1,8 @@
 def mock_ec2_client(*args, **kwargs):
     class TestEc2Client:
         @classmethod
-        def get_ami_id(cls, user_config_ami_id):
-            return "i-0155ggdgds686"
+        def get_ami_id(cls, ami_id):
+            return "i-0555ggdgff777"
 
     ec2_client = TestEc2Client()
 

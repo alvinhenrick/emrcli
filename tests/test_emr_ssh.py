@@ -12,7 +12,7 @@ from .mock_os import mock_os
 def test_ssh_master(mock_emr_client, mock_ec2_client, mock_os):
     response = HandleEMRCommands("tests/configs/emrcliconfig_inst_groups.yaml", with_steps=True,
                                  profile_name=None).ssh()
-    assert response == True
+    assert response is True
 
 
 @mock.patch("aws.utils.emr.emr.HandleEMRCommands.emr_client", side_effect=mock_emr_client)
@@ -22,4 +22,4 @@ def test_create_tunnel(mock_emr_client, mock_ec2_client, mock_os):
     response = HandleEMRCommands("tests/configs/emrcliconfig_inst_groups.yaml", with_steps=True,
                                  profile_name=None).tunnel()
 
-    assert response == True
+    assert response is True

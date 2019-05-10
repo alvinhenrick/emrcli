@@ -7,40 +7,40 @@ def mock_emr_client(*args, **kwargs):
         def run_job_flow(cls, **kwargs):
             return {"ResponseMetadata": {"HTTPHeaders": {"content-length": "1624",
                                                          "content-type": "application/x-amz-json-1.1",
-                                                         "date": "Mon, 02 Jul 2018 23:44:46 GMT",
-                                                         "x-amzn-requestid": "e7371e56-7e51-11e8-b253-4754b23ad985"},
+                                                         "date": "Mon, 02 Jul 2017 23:44:46 GMT",
+                                                         "x-amzn-requestid": "e7371e56-7e51-11e8-b253-4754b23ad999"},
                                          "HTTPStatusCode": 200,
-                                         "RequestId": "e7371e56-7e51-11e8-b253-4754b23ad985",
-                                         "RetryAttempts": 0}, "JobFlowId": "s-SNGBtR34"}
+                                         "RequestId": "e7371e56-7e51-11e8-b253-4754b23ad999",
+                                         "RetryAttempts": 0}, "JobFlowId": "s-SNGBtA88"}
 
         @classmethod
         def terminate_job_flows(cls, **kwargs):
             return {"ResponseMetadata": {"HTTPHeaders": {"content-length": "1624",
                                                          "content-type": "application/x-amz-json-1.1",
-                                                         "date": "Mon, 02 Jul 2018 23:44:46 GMT",
-                                                         "x-amzn-requestid": "e7371e56-7e51-11e8-b253-4754b23ad985"},
+                                                         "date": "Mon, 02 Jul 2017 23:44:46 GMT",
+                                                         "x-amzn-requestid": "e7371e56-7e51-11e8-b253-4754b23ad999"},
                                          "HTTPStatusCode": 200,
-                                         "RequestId": "e7371e56-7e51-11e8-b253-4754b23ad985",
+                                         "RequestId": "e7371e56-7e51-11e8-b253-4754b23ad999",
                                          "RetryAttempts": 0}}
 
         @classmethod
         def describe_cluster(cls, **kwargs):
             return {"ResponseMetadata": {"HTTPHeaders": {"content-length": "1624",
                                                          "content-type": "application/x-amz-json-1.1",
-                                                         "date": "Mon, 02 Jul 2018 23:44:46 GMT",
-                                                         "x-amzn-requestid": "e7371e56-7e51-11e8-b253-4754b23ad985"},
+                                                         "date": "Mon, 02 Jul 2017 23:44:46 GMT",
+                                                         "x-amzn-requestid": "e7371e56-7e51-11e8-b253-4754b23ad999"},
                                          "HTTPStatusCode": 200,
-                                         "RequestId": "e7371e56-7e51-11e8-b253-4754b23ad985",
+                                         "RequestId": "e7371e56-7e51-11e8-b253-4754b23ad999",
                                          "RetryAttempts": 0},
                     'Cluster': {
-                        'Id': 's-SNGBtR34l',
+                        'Id': 's-SNGBtA88l',
                         'Name': 'test_cluster',
                         'Status': {
                             'State': 'RUNNING',
                             'Timeline': {
-                                'CreationDateTime': datetime(2018, 1, 1),
-                                'ReadyDateTime': datetime(2018, 1, 1),
-                                'EndDateTime': datetime(2018, 1, 1)
+                                'CreationDateTime': datetime(2017, 1, 1),
+                                'ReadyDateTime': datetime(2017, 1, 1),
+                                'EndDateTime': datetime(2017, 1, 1)
                             }
                         },
                         'InstanceCollectionType': 'INSTANCE_GROUP',
@@ -52,10 +52,10 @@ def mock_emr_client(*args, **kwargs):
         def list_instance_fleets(cls, **kwargs):
             return {"ResponseMetadata": {"HTTPHeaders": {"content-length": "1624",
                                                          "content-type": "application/x-amz-json-1.1",
-                                                         "date": "Mon, 02 Jul 2018 23:44:46 GMT",
-                                                         "x-amzn-requestid": "e7371e56-7e51-11e8-b253-4754b23ad985"},
+                                                         "date": "Mon, 02 Jul 2017 23:44:46 GMT",
+                                                         "x-amzn-requestid": "e7371e56-7e51-11e8-b253-4754b23ad999"},
                                          "HTTPStatusCode": 200,
-                                         "RequestId": "e7371e56-7e51-11e8-b253-4754b23ad985",
+                                         "RequestId": "e7371e56-7e51-11e8-b253-4754b23ad999",
                                          "RetryAttempts": 0},
                     'InstanceFleets': [
                         {
@@ -64,9 +64,9 @@ def mock_emr_client(*args, **kwargs):
                             'Status': {
                                 'State': 'RUNNING',
                                 'Timeline': {
-                                    'CreationDateTime': datetime(2018, 1, 1),
-                                    'ReadyDateTime': datetime(2018, 1, 1),
-                                    'EndDateTime': datetime(2018, 1, 1)
+                                    'CreationDateTime': datetime(2017, 1, 1),
+                                    'ReadyDateTime': datetime(2017, 1, 1),
+                                    'EndDateTime': datetime(2017, 1, 1)
                                 }
                             },
                             'InstanceFleetType': 'MASTER',
@@ -128,9 +128,9 @@ def mock_emr_client(*args, **kwargs):
                             'Status': {
                                 'State': 'RUNNING',
                                 'Timeline': {
-                                    'CreationDateTime': datetime(2018, 1, 1),
-                                    'ReadyDateTime': datetime(2018, 1, 1),
-                                    'EndDateTime': datetime(2018, 1, 1)
+                                    'CreationDateTime': datetime(2017, 1, 1),
+                                    'ReadyDateTime': datetime(2017, 1, 1),
+                                    'EndDateTime': datetime(2017, 1, 1)
                                 }
                             },
                             'InstanceFleetType': 'CORE',
@@ -193,10 +193,10 @@ def mock_emr_client(*args, **kwargs):
         def list_instance_groups(cls, **kwargs):
             return {"ResponseMetadata": {"HTTPHeaders": {"content-length": "1624",
                                                          "content-type": "application/x-amz-json-1.1",
-                                                         "date": "Mon, 02 Jul 2018 23:44:46 GMT",
-                                                         "x-amzn-requestid": "e7371e56-7e51-11e8-b253-4754b23ad985"},
+                                                         "date": "Mon, 02 Jul 2017 23:44:46 GMT",
+                                                         "x-amzn-requestid": "e7371e56-7e51-11e8-b253-4754b23ad999"},
                                          "HTTPStatusCode": 200,
-                                         "RequestId": "e7371e56-7e51-11e8-b253-4754b23ad985",
+                                         "RequestId": "e7371e56-7e51-11e8-b253-4754b23ad999",
                                          "RetryAttempts": 0},
                     'InstanceGroups': [
                         {
@@ -210,9 +210,9 @@ def mock_emr_client(*args, **kwargs):
                             'Status': {
                                 'State': 'RUNNING',
                                 'Timeline': {
-                                    'CreationDateTime': datetime(2018, 1, 1),
-                                    'ReadyDateTime': datetime(2018, 1, 1),
-                                    'EndDateTime': datetime(2018, 1, 1)
+                                    'CreationDateTime': datetime(2017, 1, 1),
+                                    'ReadyDateTime': datetime(2017, 1, 1),
+                                    'EndDateTime': datetime(2017, 1, 1)
                                 }
                             },
                             'Configurations': [
@@ -262,9 +262,9 @@ def mock_emr_client(*args, **kwargs):
                             'Status': {
                                 'State': 'RUNNING',
                                 'Timeline': {
-                                    'CreationDateTime': datetime(2018, 1, 1),
-                                    'ReadyDateTime': datetime(2018, 1, 1),
-                                    'EndDateTime': datetime(2018, 1, 1)
+                                    'CreationDateTime': datetime(2017, 1, 1),
+                                    'ReadyDateTime': datetime(2017, 1, 1),
+                                    'EndDateTime': datetime(2017, 1, 1)
                                 }
                             },
                             'Configurations': [
@@ -310,10 +310,10 @@ def mock_emr_client(*args, **kwargs):
         def add_job_flow_steps(cls, **kwargs):
             return {"ResponseMetadata": {"HTTPHeaders": {"content-length": "1624",
                                                          "content-type": "application/x-amz-json-1.1",
-                                                         "date": "Mon, 02 Jul 2018 23:44:46 GMT",
-                                                         "x-amzn-requestid": "e7371e56-7e51-11e8-b253-4754b23ad985"},
+                                                         "date": "Mon, 02 Jul 2017 23:44:46 GMT",
+                                                         "x-amzn-requestid": "e7371e56-7e51-11e8-b253-4754b23ad999"},
                                          "HTTPStatusCode": 200,
-                                         "RequestId": "e7371e56-7e51-11e8-b253-4754b23ad985",
+                                         "RequestId": "e7371e56-7e51-11e8-b253-4754b23ad999",
                                          "RetryAttempts": 0},
 
                     'StepIds': [
@@ -326,65 +326,65 @@ def mock_emr_client(*args, **kwargs):
         def list_instances(cls, **kwargs):
             return {"ResponseMetadata": {"HTTPHeaders": {"content-length": "1624",
                                                          "content-type": "application/x-amz-json-1.1",
-                                                         "date": "Mon, 02 Jul 2018 23:44:46 GMT",
-                                                         "x-amzn-requestid": "e7371e56-7e51-11e8-b253-4754b23ad985"},
+                                                         "date": "Mon, 02 Jul 2017 23:44:46 GMT",
+                                                         "x-amzn-requestid": "e7371e56-7e51-11e8-b253-4754b23ad999"},
                                          "HTTPStatusCode": 200,
-                                         "RequestId": "e7371e56-7e51-11e8-b253-4754b23ad985",
+                                         "RequestId": "e7371e56-7e51-11e8-b253-4754b23ad999",
                                          "RetryAttempts": 0},
 
                     'Instances': [
                         {'Id': 'ci-3SC4IQXMO1PSK',
-                         'Ec2InstanceId': 'i-0576b968542aa508f',
+                         'Ec2InstanceId': 'i-0576b968542bb508f',
                          'PublicDnsName': '',
-                         'PrivateDnsName': 'ip-10-223-183-7.ec2.internal',
-                         'PrivateIpAddress': '10.223.183.7',
+                         'PrivateDnsName': 'ip-11-225-183-7.ec2.internal',
+                         'PrivateIpAddress': '11.225.183.7',
                          'Status': {'State': 'TERMINATED',
                                     'StateChangeReason': {'Code': 'INTERNAL_ERROR',
                                                           'Message': 'Startup script failed.'},
-                                    'Timeline': {'CreationDateTime': datetime(2018, 10, 9, 10),
-                                                 'EndDateTime': datetime(2018, 10, 9)}},
+                                    'Timeline': {'CreationDateTime': datetime(2017, 10, 9, 10),
+                                                 'EndDateTime': datetime(2017, 10, 9)}},
                          'InstanceGroupId': 'ig-3CVLDUSAEVB33',
                          'Market': 'ON_DEMAND',
                          'InstanceType': 'm4.4xlarge',
                          'EbsVolumes': [{'Device': '/dev/sdb',
                                          'VolumeId': 'vol-035e6d6d63fd5b244'}]},
                         {'Id': 'ci-31W8Z97DPKISH',
-                         'Ec2InstanceId': 'i-0f8a49595746081c6',
+                         'Ec2InstanceId': 'i-0f8a49595746000c6',
                          'PublicDnsName': '',
-                         'PrivateDnsName': 'ip-10-223-181-246.ec2.internal',
-                         'PrivateIpAddress': '10.223.181.246',
+                         'PrivateDnsName': 'ip-11-225-181-246.ec2.internal',
+                         'PrivateIpAddress': '11.225.181.246',
                          'Status': {'State': 'RUNNING',
                                     'StateChangeReason': {},
-                                    'Timeline': {'CreationDateTime': datetime(2018, 10, 9),
-                                                 'ReadyDateTime': datetime(2018, 10, 9)}},
+                                    'Timeline': {'CreationDateTime': datetime(2017, 10, 9),
+                                                 'ReadyDateTime': datetime(2017, 10, 9)}},
                          'InstanceGroupId': 'ig-3CVLDUSAEVB33',
                          'Market': 'ON_DEMAND',
                          'InstanceType': 'm4.4xlarge',
                          'EbsVolumes': [{'Device': '/dev/sdb',
                                          'VolumeId': 'vol-024a827a0dfb1f020'}]},
                         {'Id': 'ci-LALR90A040LE',
-                         'Ec2InstanceId': 'i-010785f4dd01291c6',
+                         'Ec2InstanceId': 'i-010785f4cc01291c6',
                          'PublicDnsName': '',
-                         'PrivateDnsName': 'ip-10-223-182-177.ec2.internal',
-                         'PrivateIpAddress': '10.223.182.177',
+                         'PrivateDnsName': 'ip-11-225-182-177.ec2.internal',
+                         'PrivateIpAddress': '11.225.182.177',
                          'Status': {'State': 'RUNNING',
                                     'StateChangeReason': {},
-                                    'Timeline': {'CreationDateTime': datetime(2018, 10, 9, 10),
-                                                 'ReadyDateTime': datetime(2018, 10, 9)}},
+                                    'Timeline': {'CreationDateTime': datetime(2017, 10, 9, 10),
+                                                 'ReadyDateTime': datetime(2017, 10, 9)}},
                          'InstanceGroupId': 'ig-3CVLDUSAEVB33',
                          'Market': 'ON_DEMAND',
                          'InstanceType': 'm4.4xlarge',
                          'EbsVolumes': [{'Device': '/dev/sdb',
                                          'VolumeId': 'vol-0dfa83f26dba6d166'}]},
                         {'Id': 'ci-7EGA48KCGEPB',
-                         'Ec2InstanceId': 'i-00165a7ff705de729',
+                         'Ec2InstanceId': 'i-00165a7vv705de729',
                          'PublicDnsName': '',
-                         'PrivateDnsName': 'ip-10-223-183-233.ec2.internal',
-                         'PrivateIpAddress': '10.223.183.233',
+                         'PrivateDnsName': 'ip-11-225-183-233.ec2.internal',
+                         'PrivateIpAddress': '11.225.183.233',
                          'Status': {'State': 'RUNNING',
                                     'StateChangeReason': {},
-                                    'Timeline': {'CreationDateTime': datetime(2018, 10, 9),
-                                                 'ReadyDateTime': datetime(2018, 10, 9)}},
+                                    'Timeline': {'CreationDateTime': datetime(2017, 10, 9),
+                                                 'ReadyDateTime': datetime(2017, 10, 9)}},
                          'InstanceGroupId': 'ig-3CVLDUSAEVB33',
                          'Market': 'ON_DEMAND',
                          'InstanceType': 'm4.4xlarge',
@@ -393,12 +393,12 @@ def mock_emr_client(*args, **kwargs):
                         {'Id': 'ci-2HFLSDMDWGQTO',
                          'Ec2InstanceId': 'i-0217e49225744ce71',
                          'PublicDnsName': '',
-                         'PrivateDnsName': 'ip-10-223-180-81.ec2.internal',
-                         'PrivateIpAddress': '10.223.180.81',
+                         'PrivateDnsName': 'ip-11-225-180-81.ec2.internal',
+                         'PrivateIpAddress': '11.225.180.81',
                          'Status': {'State': 'RUNNING',
                                     'StateChangeReason': {},
-                                    'Timeline': {'CreationDateTime': datetime(2018, 10, 9),
-                                                 'ReadyDateTime': datetime(2018, 10, 9)}},
+                                    'Timeline': {'CreationDateTime': datetime(2017, 10, 9),
+                                                 'ReadyDateTime': datetime(2017, 10, 9)}},
                          'InstanceGroupId': 'ig-3CVLDUSAEVB33',
                          'Market': 'ON_DEMAND',
                          'InstanceType': 'm4.4xlarge',
@@ -407,13 +407,13 @@ def mock_emr_client(*args, **kwargs):
                         {'Id': 'ci-26MIX2MMXOOY7',
                          'Ec2InstanceId': 'i-0938b90515b0b8adf',
                          'PublicDnsName': '',
-                         'PrivateDnsName': 'ip-10-223-182-250.ec2.internal',
-                         'PrivateIpAddress': '10.223.182.250',
+                         'PrivateDnsName': 'ip-11-225-182-250.ec2.internal',
+                         'PrivateIpAddress': '11.225.182.250',
                          'Status': {'State': 'RUNNING',
                                     'StateChangeReason': {},
                                     'Timeline': {
-                                        'CreationDateTime': datetime(2018, 10, 9),
-                                        'ReadyDateTime': datetime(2018, 10, 9)}},
+                                        'CreationDateTime': datetime(2017, 10, 9),
+                                        'ReadyDateTime': datetime(2017, 10, 9)}},
                          'InstanceGroupId': 'ig-3FR4STYY3V56R',
                          'Market': 'ON_DEMAND',
                          'InstanceType': 'm4.xlarge',
@@ -422,12 +422,12 @@ def mock_emr_client(*args, **kwargs):
                         {'Id': 'ci-29QIUQ3NYBVG6',
                          'Ec2InstanceId': 'i-011513d5f9721926b',
                          'PublicDnsName': '',
-                         'PrivateDnsName': 'ip-10-223-181-179.ec2.internal',
-                         'PrivateIpAddress': '10.223.181.179',
+                         'PrivateDnsName': 'ip-11-225-181-179.ec2.internal',
+                         'PrivateIpAddress': '11.225.181.179',
                          'Status': {'State': 'RUNNING',
                                     'StateChangeReason': {},
-                                    'Timeline': {'CreationDateTime': datetime(2018, 10, 9),
-                                                 'ReadyDateTime': datetime(2018, 10, 9)}},
+                                    'Timeline': {'CreationDateTime': datetime(2017, 10, 9),
+                                                 'ReadyDateTime': datetime(2017, 10, 9)}},
                          'InstanceGroupId': 'ig-3CVLDUSAEVB33',
                          'Market': 'ON_DEMAND',
                          'InstanceType': 'm4.4xlarge',

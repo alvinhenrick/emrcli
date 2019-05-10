@@ -7,12 +7,12 @@ types = {
     "t2.xlarge": {"CPU": 4, "RAM": 16},
     "t2.2xlarge": {"CPU": 8, "RAM": 32},
 
-    "m4.large": {"CPU": 2, "RAM": 8, "SpotBidPrice": 0.05},
-    "m4.xlarge": {"CPU": 4, "RAM": 16, "SpotBidPrice": 0.1},
-    "m4.2xlarge": {"CPU": 8, "RAM": 32, "SpotBidPrice": 0.2},
-    "m4.4xlarge": {"CPU": 16, "RAM": 64, "SpotBidPrice": 0.4},
-    "m4.10xlarge": {"CPU": 40, "RAM": 160, "SpotBidPrice": 1.1},
-    "m4.16xlarge": {"CPU": 64, "RAM": 256, "SpotBidPrice": 1.75},
+    "m4.large": {"CPU": 2, "RAM": 8},
+    "m4.xlarge": {"CPU": 4, "RAM": 16, },
+    "m4.2xlarge": {"CPU": 8, "RAM": 32, },
+    "m4.4xlarge": {"CPU": 16, "RAM": 64, },
+    "m4.10xlarge": {"CPU": 40, "RAM": 160, },
+    "m4.16xlarge": {"CPU": 64, "RAM": 256, },
 
     "m5.large": {"CPU": 2, "RAM": 8, "SpotBidPrice": 0.05},
     "m5.xlarge": {"CPU": 4, "RAM": 16, "SpotBidPrice": 0.11},
