@@ -22,7 +22,7 @@ test_requirements = parse_requirements('requirements-dev.txt')
 
 setup(name=package_name,
       version=version,
-      license='MIT License 2.0,',
+      license='MIT License,',
       description='EMR Command Line Utility',
       author='Alvin Henrick',
       author_email='share.code@aol.com',
